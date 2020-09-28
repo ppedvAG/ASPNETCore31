@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OrVF8YaEgQmZNyJYpuWLuRUR831dEwBSs5c/jTsmzkxgtjzvuaF3Bf/LldGTVwVUGuQLKBs5kZuZWSbRumbf2w==",
+  "success": true,
+  "projectFilePath": "C:\\Aktueller Kurs\\ASPNETCore31\\ASPNETCore20200928\\001_Overview_RazorPages\\001_Overview_RazorPages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KW4\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

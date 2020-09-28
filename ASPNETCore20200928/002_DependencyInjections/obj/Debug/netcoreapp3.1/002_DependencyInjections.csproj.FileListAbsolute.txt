@@ -1,0 +1,13 @@
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.exe
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.deps.json
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.runtimeconfig.json
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.runtimeconfig.dev.json
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\bin\Debug\netcoreapp3.1\002_DependencyInjections.pdb
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.csprojAssemblyReference.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.pdb
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\002_DependencyInjections\obj\Debug\netcoreapp3.1\002_DependencyInjections.genruntimeconfig.cache
