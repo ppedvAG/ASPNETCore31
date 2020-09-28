@@ -1,0 +1,27 @@
+Montag:
+ RazorPages
+
+
+ Dienstag:
+ Vormittags:
+ -  RazorPages - Wiederholung
+ -	RazorPages - CRUD 
+ -  Validierung
+ -  ASP Tag Helper
+
+Nachmittag: 
+ - ASP.NET Core MVC 
+
+ Mittwoch:
+ Vormitags:
+ - ASP.NET Core MVC Wiederholung
+
+ - ASP.NET Core MVC CRUD 
+ - ASP.NET MVC / Razor Pages
+ 
+
+ Nachmittag:
+ - WebAPI Crud 
+ - gRPC Crud
+
+ ------------------------------------------

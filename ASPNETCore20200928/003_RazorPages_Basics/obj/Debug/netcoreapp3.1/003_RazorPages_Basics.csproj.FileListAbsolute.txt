@@ -12,8 +12,6 @@ C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\bin\Debu
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.csprojAssemblyReference.cache
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.AssemblyInfoInputs.cache
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.AssemblyInfo.cs
-C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.csproj.CoreCompileInputs.cache
-C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.MvcApplicationPartsAssemblyInfo.cache
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.RazorAssemblyInfo.cache
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.RazorAssemblyInfo.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.TagHelpers.input.cache
@@ -42,3 +40,12 @@ C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debu
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout2.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample001\Calc2.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample001\RazorReferencePage.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample002\GallerySample1.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample002\PictureUploadSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\003_RazorPages_Basics.MvcApplicationPartsAssemblyInfo.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample002\GallerySample2.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\PartialViewSample1.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\_Zeit.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\PartialViewSample2.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\_Excel.cshtml.g.cs

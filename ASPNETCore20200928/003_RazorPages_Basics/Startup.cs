@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _003_RazorPages_Basics.Pages.Sample002;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,12 +41,20 @@ namespace _003_RazorPages_Basics
                 app.UseHsts();
             }
 
+            
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+            {
+                subapp.UseThumbnailGen();
+            });
 
             app.UseEndpoints(endpoints =>
             {

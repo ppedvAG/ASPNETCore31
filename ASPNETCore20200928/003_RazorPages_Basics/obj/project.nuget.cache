@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0ttlhtuiTXvX37Het0Cn1XoYpw4oAjVARfGhrshf7RnKWJGd3jzl7HB/2Z8SvKiY9OnG5NGzufBlt928bz5S0A==",
+  "dgSpecHash": "/aeQj4ls48gVNGOUAMv441VTFIpu46/tzpOb5bJyvHGKoX0zhawHgjPj/XATNWK7bLFA23LuZola3Z9KUEZn5g==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\ASPNETCore31\\ASPNETCore20200928\\003_RazorPages_Basics\\003_RazorPages_Basics.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KW4\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\KW4\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\KW4\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
