@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using _002_DependencyInjectionSample_With_MVC.Models;
 using Serilog;
+using _002_DependencyInjections;
 
 namespace _002_DependencyInjectionSample_With_MVC.Controllers
 {
@@ -14,7 +15,7 @@ namespace _002_DependencyInjectionSample_With_MVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ICar myMockCarObj)
         {
             Log.Information("Call HomeController");
 

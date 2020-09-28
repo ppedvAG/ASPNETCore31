@@ -1,0 +1,316 @@
+﻿@page
+@model _003_RazorPages_Basics.Pages.Sample001.RazorReferencePageModel
+@{
+    ViewData["Title"] = "RazorReferencePage";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>RazorReferencePage</h1>
+
+@*DAs ist ein Kommentar :-)*@
+
+@* Kommentar kann auch
+    über mehrere Zeilen gehen
+    Thats cool :-) *@
+
+
+
+@*Impliziete Ausdrücke mit @Variable (direkt in einem <p>-Tag)*@
+@*Einfache Ausgabe*@
+
+
+
+<p>@Model.Username</p> @* -> Mustermann wird  *@
+<p>@@Model.Username</p> @* @Mustermann *@
+
+    @*Sample 2*@
+@* Mit Ausnahme des C#-Schlüsselworts await dürfen implizite Ausdrücke keine Leerzeichen enthalten.
+    Wird die C#-Anweisung eindeutig beendet, können auch Leerzeichen verwendet werden: *@
+@*<p>@await DoSomething("hello", "world") </p>*@
+
+@*Sample 3*@
+@*Beim Aufrufen einer Generischen Methode, bitte expliziete Aufrufe verwenden. Impliziete Aufrufe unterstüzen keine generischen Methoden*@
+@*<p>@GenericMethode<int>()</p>*@
+
+
+@*Expliziten Aufruf*@
+<p>Last week this time: @(DateTime.Now - TimeSpan.FromDays(7))</p>
+
+<p>String Manipulator: @(string.Empty + "Max" + DateTime.Now.ToString() + string.IsNullOrEmpty("Testme").ToString())</p>
+
+@*Exliziter Code-Block*@
+@{
+    // Mehrzeilig
+    var joe = new Person("Joe", 33);
+
+    var muster = new Person("Muster", 44);
+}
+
+@{ 
+/*var joe = new Person("Tester", 12);*/ //Sollte Fehler aufwerfen, weil die Variable Joe wurde schon lokal deklariert
+    
+}
+<p>
+    @(joe.Name + " " + joe.Age.ToString())
+<p>
+    @*Expiziete Code-Blöcke, können nur mit einem explzieten Call aufgerufen werden. @@(joe.Name)*@
+<p>Person: @(joe.Name) </p>
+@*Aufruf über Model ist daher nicht möglich, weil das Model die Code-Behind - Datei repräsentiert.*@
+<p>Person: @@Model.joe geht nicht</p>
+
+
+@*function erweitert die Model - Klasse*@
+
+@functions
+{
+    public string GenericMethod<T>()
+    {
+        @Model.DieAntwortAufAlles();
+        return "a Type";
+    }
+
+
+}
+
+
+
+@* Codieren von Ausdrücken*@
+<p>Ausdruck ohne HTML.Raw</p>
+@("<b>Hello World</b>")
+
+<br />
+<p>Ausdruck mit HTML.Raw</p>
+@Html.Raw("<b>Hello World</b>");
+
+
+
+@* 5.1Deklarieren Sie in Codeblöcken lokale Funktionen mit Markup als Vorlagenmethoden:*@
+
+@{
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King, Jr.");
+}
+
+@* Der Code rendert den folgenden HTML-Code:
+    <p>Name: <strong>Mahatma Gandhi</strong></p>
+    <p>Name: <strong>Martin Luther King, Jr.</strong></p>
+*@
+
+@{var i = 0; }
+
+
+
+
+
+
+@* Das <text>-Tag ist nützlich, wenn Sie beim Rendern von Inhalt Leerzeichen steuern möchten:
+    Nur der Inhalt zwischen den <text>-Tags wird gerendert.
+    In der HTML-Ausgabe werden keine Leerzeichen vor oder nach dem <text>-Tag angezeigt.*@
+
+@for (i = 0; i < Model.People.Length; i++)
+{
+    var currentPeople = Model.People[i];
+
+    <text>Name: @currentPeople.Name</text>
+    <br />
+}
+
+
+@* Verwenden Sie die @:-Syntax, um den Rest einer kompletten Zeile als HTML-Code in einem Codeblock zu rendern: *@
+@for (i = 0; i < Model.People.Length; i++)
+{
+    var currentPeople = Model.People[i];
+
+    @: Name:   @currentPeople.Name
+}
+
+
+@functions
+{
+    private int value = 2;
+}
+
+@if (Model.People.Length > 0)
+{
+
+}
+
+@if (Model.AllesSupi())
+{
+
+}
+
+@if (value % 2 == 0)
+{
+    <p>Die Zahl ist gerade</p>
+
+    @(GenericMethod<int>());
+}
+
+@if (Model.People.Length > 0)
+{
+    //Zeige Liste an
+}
+else
+{
+    //Ausgabe -> Kein Ergebniss
+}
+
+@switch (value)
+{
+    case 1:
+        <p>value is 1!</p>
+        break;
+    case 1337:
+        <p>value is 1337</p>
+        break;
+    default:
+        <p>Your Number wasnt 1 or 1337</p>
+        break;
+}
+
+
+@foreach (Person currentPerson in Model.People)
+{
+    <text>@currentPerson.Name</text>
+}
+
+
+
+
+@while (i < Model.People.Length)
+{
+    var person = Model.People[i];
+    <p>Name: @person.Name</p>
+    <p>Age: @person.Age</p>
+
+    i++;
+}
+
+@* 7.2.4 @do while *@
+
+@{i = 0; }
+@do
+{
+    var person = Model.People[i];
+    <p>Name: @person.Name</p>
+    <p>Age: @person.Age</p>
+
+    i++;
+} while (i < Model.People.Length);
+
+
+
+
+
+@*Je nach Programmsituation kann man auch Style anpassen und in einer Kontrollstruktur zusammenfassen*@
+<div style='@(Model.MyProperty==7?"background-color:yellow":"background-color:orange")'>demo</div>
+
+
+
+
+@* 7.3 Verbund @using
+
+    In C# kann mit einer using-Anweisung sichergestellt werden, dass ein Objekt freigegeben wurde.
+    In Razor wird derselbe Mechanismus verwendet, um HTML-Hilfsprogramme zu erstellen, die zusätzliche Inhalte enthalten.
+    Im folgenden Code wird ein <form>-Tag mit der @using-Anweisung durch HTML-Hilfsprogramme gerendert:
+*@
+
+@using (Html.BeginForm())
+{
+    <div>
+        Email: <input type="email" id="Email" value="">
+        <button>Register</button>
+    </div>
+}
+
+@try
+{
+
+}
+catch (Exception)
+{
+
+}
+finally
+{
+
+}
+
+
+
+@* 7.5 @lock *@
+@lock (Model.Username)
+{
+    // Do critical section work
+}
+
+
+@*Interface wird hinzugefügt. Ob das Sinn macht, ist mal dahingestellt*@
+@*@implements IDisposable*@
+
+<h1>Example</h1>
+
+@*@functions {
+        private bool _isDisposed;
+        public void Dispose()
+        {
+            _isDisposed = true;
+        }
+    }*@
+
+
+
+
+@*@inject*@
+@* 8.4 @inject
+    Mit der @inject-Anweisung kann die Razor Page einen Dienst aus dem Dienstcontainer in eine Ansicht einfügen.
+    Weitere Informationen finden Sie unter Dependency Injection in Ansichten.*@
+
+
+
+@*@model @*Siehe RazorPage.cshtml*@
+@*Die @model-Anweisung gibt den Typ des Modells an, das an eine Ansicht oder Seite übergeben wird:*@
+
+
+@* 8.6 @page
+        Die @page-Anweisung hat abhängig vom Typ der Datei, in der Sie verwendet wird, unterschiedliche Auswirkungen.
+        Für die Anweisung gilt:
+
+        -   In einer CSHTML-Datei gibt sie an, dass die Datei eine Razor-Seite ist. Weitere Informationen finden Sie unter Benutzerdefinierte Routen und Einführung in Razor Pages in ASP.NET Core.
+        -   Gibt an, dass eine Razor-Komponente Anforderungen direkt verarbeiten soll. Weitere Informationen finden Sie unter ASP.net Core Blazor Routing.
+
+    @* 8.7 @section
+
+        Dieses Szenario gilt nur für MVC-Ansichten und Razor Pages (.cshtml).
+        Die @section-Anweisung wird in Verbindung mit MVC- und Razor Pages-Layouts verwendet, damit Ansichten Seiten Inhalte in verschiedenen Teilen
+        der HTML-Seite rendern können. Weitere Informationen finden Sie unter Layout in ASP.NET Core.
+*@
+
+@section Scripts
+{
+    <script>
+        $('h1').text('Hallo liebe Teilnehmer');
+    </script>
+}
+
+
+
+@using System.IO
+@{
+    var dir = Directory.GetCurrentDirectory();
+}
+<p>@dir</p>
+
+
+
+
+
+
+
+

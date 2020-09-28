@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eUuQhsb7HpdMQGNDmPb5yJT6YnmfsG/a7qsc/vm35SODX2J0Wo1GfZ3OdgiS8/x5eKbyxlJUbGi512zHSx9tGg==",
+  "dgSpecHash": "vfo8XzjKqsbBz6CkmD76SvcsoEm1eNtSSozVVkYicRUKeewge9qo3K3yXZdVhv3uVAJPN5FCnd7uo1N8eOatXQ==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\ASPNETCore31\\ASPNETCore20200928\\002_DependencyInjectionSample_With_MVC\\002_DependencyInjectionSample_With_MVC.csproj",
   "expectedPackageFiles": [

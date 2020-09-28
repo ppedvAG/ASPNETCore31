@@ -31,6 +31,7 @@ namespace _002_DependencyInjectionSample_With_MVC
 
             //Variante 2 -Konfiguration via Code
             //Code Configuration in Serilog (ist möglich)
+
             //Log.Logger = new LoggerConfiguration()
             //.MinimumLevel.Debug()
             //.MinimumLevel.Override("Microsoft", LogEventLevel.Information)

@@ -1034,6 +1034,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "002_DependencyInjections/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/002_DependencyInjections.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/002_DependencyInjections.dll": {}
+        }
       }
     }
   },
@@ -3878,10 +3888,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "002_DependencyInjections/1.0.0": {
+      "type": "project",
+      "path": "../002_DependencyInjections/002_DependencyInjections.csproj",
+      "msbuildProject": "../002_DependencyInjections/002_DependencyInjections.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "002_DependencyInjections >= 1.0.0",
       "Serilog.AspNetCore >= 3.2.0",
       "Serilog.Settings.Configuration >= 3.1.0",
       "Serilog.Sinks.File >= 4.1.0"
@@ -3919,7 +3935,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Aktueller Kurs\\ASPNETCore31\\ASPNETCore20200928\\002_DependencyInjections\\002_DependencyInjections.csproj": {
+              "projectPath": "C:\\Aktueller Kurs\\ASPNETCore31\\ASPNETCore20200928\\002_DependencyInjections\\002_DependencyInjections.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

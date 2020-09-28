@@ -118,5 +118,22 @@ namespace _002_DependencyInjections
     }
 
 
+    public class MockCarV2 : ICar
+    {
+        public string Marke { get; set; } = "Audi";
+        public string Type { get; set; } = "der langsamste";
+        public DateTime Baujahr { get; set; } = new DateTime(2018, 03, 02);
+        public bool Radio { get; set; } = true;
+    }
+
+    public class MockCarV3 : ICar
+    {
+        public string Marke { get; set; } = "Audi2";
+        public string Type { get; set; } = "der langsamste2";
+        public DateTime Baujahr { get; set; } = new DateTime(2222, 03, 02);
+        public bool Radio { get; set; } = false;
+    }
+
+
     #endregion
 }

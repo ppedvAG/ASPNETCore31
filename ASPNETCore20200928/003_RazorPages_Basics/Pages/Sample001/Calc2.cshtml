@@ -1,0 +1,17 @@
+﻿@page
+@model _003_RazorPages_Basics.Pages.Sample001.Calc2Model
+@{
+}
+
+
+<h1>Calc2</h1>
+
+<!-- Beispiel wie man mehere Button mithilfe eines aps-page-handler verwalten kann-->
+<form method="post">
+    <input name="eins" /> <br />
+    <input name="zwei" /> <br />
+    <button type="submit" asp-page-handler="plus">+</button>
+    <button type="submit" asp-page-handler="minus">-</button>
+    @Model.Ergebnis
+
+</form>
