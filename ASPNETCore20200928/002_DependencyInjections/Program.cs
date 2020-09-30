@@ -20,6 +20,8 @@ namespace _002_DependencyInjections
 
             ICarService testService = new CarService();
             carService.RepairCar(new MockCar());
+
+            carService.RepairCar(new CarVersion2());
             #endregion
         }
     }
@@ -77,6 +79,11 @@ namespace _002_DependencyInjections
         bool Radio { get; set; }
     }
 
+    public interface ICarVersion2 : ICar
+    {
+        public string Farbe { get; set; }
+    }
+
 
     // Car -> Entities.dll 
     public class Car : ICar
@@ -85,6 +92,15 @@ namespace _002_DependencyInjections
         public string Type { get; set; }
         public DateTime Baujahr { get; set; }
         public bool Radio { get; set; }
+    }
+
+    public class CarVersion2 : ICarVersion2
+    {
+        public string Farbe { get; set; } = "Blau";
+        public string Marke { get; set; } = "Volvo";
+        public string Type { get; set; } = "Kombi";
+        public DateTime Baujahr { get; set; } = DateTime.Now;
+        public bool Radio { get; set; } = true;
     }
 
 
@@ -103,9 +119,15 @@ namespace _002_DependencyInjections
     {
         public void RepairCar(ICar car)
         {
-            //Mach was....
+            if (car is ICarVersion2 car2)
+            {
+                //car2.Farbe;
+            }
         }
     }
+
+
+    
 
 
     //Test.dll

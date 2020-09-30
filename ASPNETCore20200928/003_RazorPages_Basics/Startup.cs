@@ -25,6 +25,16 @@ namespace _003_RazorPages_Basics
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            
+
+            services.AddSession(option =>
+            {
+                option.Cookie.HttpOnly = true;
+                option.IdleTimeout = new TimeSpan(0, 0, 10);
+            });
+
+            services.AddResponseCaching();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +60,12 @@ namespace _003_RazorPages_Basics
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseLoggerMiddleware();
+
+            app.UseResponseCaching();
+
+            app.UseCookiePolicy();
+            app.UseSession();
 
             app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
             {

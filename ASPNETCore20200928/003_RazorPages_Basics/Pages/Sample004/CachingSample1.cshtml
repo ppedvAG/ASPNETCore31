@@ -1,0 +1,11 @@
+﻿@page
+@model _003_RazorPages_Basics.Pages.Sample004.CachingSample1Model
+@{
+}
+
+
+<h1>Caching</h1>
+
+<cache expires-after="@new TimeSpan(0,0,30)">
+    @DateTime.Now
+</cache>

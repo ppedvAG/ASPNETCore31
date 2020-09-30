@@ -49,3 +49,8 @@ C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debu
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\_Zeit.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\PartialViewSample2.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample003\_Excel.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample004\CachingSample1.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample004\CachingSample2.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample004\CookieTest.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample004\SessionSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\003_RazorPages_Basics\obj\Debug\netcoreapp3.1\Razor\Pages\Sample004\Resptest.cshtml.g.cs

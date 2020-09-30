@@ -1,0 +1,47 @@
+﻿MVC 
+
+Kleine bis mittlere Apps
+
+View: 
+
+Controller: (Aufgaben: Daten von Model <-> View, Navigation)
+- EF Context (Datenbankanbindung)
+ - Aufbereitung der Daten
+- Workflows 
+
+- Problem an dem ganzen ist, Controller Klasse wir übermächtig groß
+
+Model:
+- Entities
+
+------------------------------------------------------------------------------
+MVC für großen Applicationen
+
+View:
+Controller:
+ - Called die Methoden (WebAPI) vom ServiceLayer und gibt Ergebnisse an View weiter. 
+Model
+ - Entites sind in einer dll ausgelagert (Entity.dll)
+
+WebAPI oder anderen Service (hat eine Referenz von Entity.dll)
+- EF (Datenbankanbindung)
+- Workflows 
+
+
+
+-------------------------------------------------------------------------
+
+RazorPage Klein bis Mittel
+RazorPage (View) 
+PageModel (Model)
+- EF Einsatz
+- Workflow Logik
+
+RazorPage: Enterprise
+
+PageModel:
+Befüllungen der "ViewModel" - Variablen
+ServieLayer:
+- EF Einsatz + Workflow Logik 
+- Benefitz: Service Layer kann man automatisiert Testen
+

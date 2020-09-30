@@ -49,6 +49,7 @@ namespace _002_DependencyInjectionSample_With_MVC
 
             app.UseAuthorization();
 
+            app.UseLoggerMiddleware();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
