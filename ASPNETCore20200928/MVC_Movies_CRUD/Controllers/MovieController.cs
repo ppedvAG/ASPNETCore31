@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_Movies_CRUD.Data;
 using MVC_Movies_CRUD.Models;
+using MVC_Movies_CRUD.ViewModel;
 
 namespace MVC_Movies_CRUD.Controllers
 {
@@ -65,20 +66,21 @@ namespace MVC_Movies_CRUD.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Create([Bind("ID,Title,ReleaseDate,Genre,Price,Kinobesuch")] MovieVM movie)
         {
+            if (movie.Title == "Kevin allein zu hause")
+                ModelState.AddModelError(string.Empty, "Warum gerade dieser Film :-) .");
+            
+            
             if (ModelState.IsValid)
             {
-                if (movie.Title == "Indiana Jones") // Logik des Workflows 
-                {
-
-                }
                 _context.Add(movie);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(movie);
         }
+
 
         // GET: Movie/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -132,6 +134,7 @@ namespace MVC_Movies_CRUD.Controllers
             }
             return View(movie);
         }
+
 
         // GET: Movie/Delete/5
         public async Task<IActionResult> Delete(int? id)

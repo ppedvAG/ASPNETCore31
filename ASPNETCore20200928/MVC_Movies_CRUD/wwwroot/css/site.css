@@ -61,7 +61,20 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  padding: 5px 5px 5px 5px;
 }
+
+body div {
+    background-color:aqua;
+    
+}
+
+body div div {
+    background-color:yellow;
+}
+
+
+
 .footer {
   position: absolute;
   bottom: 0;

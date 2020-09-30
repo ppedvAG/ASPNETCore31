@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "Protos/CustomerModel.proto";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "AdvancedGrpcService.Protos";
+
+
+message CustomerRequest {
+	int32 id=1;
+}
+
+//einfache Request.Messages + Response.Messages 
+
+service Customer {
+	
+	//List<CustomerModel> GetAllCustomer();
+	rpc GetAllCustomer (google.protobuf.Empty) returns (stream CustomerModel);
+	
+	//CustomerModel GetCustomer (int id);
+	rpc GetCustomer (CustomerRequest) returns (CustomerModel);
+
+	// void WriteCustomer(CustomerModel model);
+	rpc WriteCustomer (NewCustomerModel) returns (google.protobuf.Empty);
+}

@@ -1,0 +1,21 @@
+﻿@model MVC_Basics.ViewModels.BlogCommentViewModel
+
+@{
+    ViewData["Title"] = "ShowPartialViewWithViewModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ShowPartialViewWithViewModel</h1>
+
+<ul>
+    @foreach (var item in Model.Blogs)
+    {
+        <li>
+            Titel: @item.Title;
+        </li>
+    }
+</ul>
+
+<div>
+    <partial name="_ShowComments" />
+</div>

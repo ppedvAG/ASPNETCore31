@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MVC_Basics.Models;
@@ -27,6 +29,12 @@ namespace MVC_Basics.Controllers
 
         public IActionResult Privacy()
         {
+            string name = HttpContext.Session.GetString("Name");
+            int age = HttpContext.Session.GetInt32("Age").Value;
+
+            string jsonString = HttpContext.Session.GetString("MovieObj");
+            Movie movie = JsonSerializer.Deserialize<Movie>(jsonString);
+
             return View();
         }
 

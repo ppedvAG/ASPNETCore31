@@ -1,0 +1,9 @@
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.deps.json
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.pdb
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.pdb
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.csprojAssemblyReference.cache

@@ -1,0 +1,41 @@
+﻿@using MVC_Basics.ViewModels;
+@using MVC_Basics.Models;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    @foreach (Blog currentBlog in Model.Blogs)
+    {
+        <tr>
+            <td>@currentBlog.Title</td>
+            <td>@currentBlog.Text</td>
+        </tr>
+    }
+</table>
+
+<h2>Comments List</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    @foreach (Comment currentComment in Model.Comments)
+    {
+        <tr>
+            <td>@currentComment.CreateAt</td>
+            <td>@Html.Raw(currentComment.Message)</td>
+        </tr>
+    }
+</table>
+
+
+

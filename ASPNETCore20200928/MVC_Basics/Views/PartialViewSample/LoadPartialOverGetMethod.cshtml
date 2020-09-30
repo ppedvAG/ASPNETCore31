@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "LoadPartialOverGetMethod";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ShowPartialViewWithViewModel</h1>
+<p>Formuar wurde fertig geladen und PartialView wird on the fly via jQuery nachgeladen</p>
+<div id="div2"></div>
+
+<p>Magst du ein Button drücken</p>
+<button type="button" id="button1">Load Partial View</button>
+<div id="div1"></div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#div2").load('/PartialViewSample/OnGetMyPartial');
+    })
+
+    $("#button1").on("click", function () {
+        $("#div1").load('/PartialViewSample/OnGetMyPartial');
+    })
+</script>
+
+
+

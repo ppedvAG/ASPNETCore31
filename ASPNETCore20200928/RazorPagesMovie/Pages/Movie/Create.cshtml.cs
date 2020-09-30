@@ -31,6 +31,11 @@ namespace RazorPagesMovie.Pages.Movie
         // more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            // Logische Prüfungen auf den Inhalt des Datensatzen z.b BlackListe
+            if (Movie.Title == "Kevin allein zu hause")
+                ModelState.AddModelError(string.Empty, "Warum gerade dieser Film :-) .");
+
+            // Ob alles korrekt ist (DataAnno
             if (!ModelState.IsValid) // Prüft ob das Formular valide ausgefüllt wurde -> Zum Einsatz kommt im Hintergrund diejQuery.Validation Library
             {
                 // Bei einem Fehler, wird die Seite mit den Vorhandenen Eintragungen + Fehlermeldungen angezeigt

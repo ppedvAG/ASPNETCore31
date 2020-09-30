@@ -1,0 +1,4 @@
+obj\Debug\netcoreapp3.1\Protos/Customer.cs \
+obj\Debug\netcoreapp3.1\Protos/CustomerGrpc.cs: Protos/CustomerModel.proto\
+ C:/Users/KW4/.nuget/packages/grpc.tools/2.32.0/build/native/include/google/protobuf/empty.proto\
+ Protos/Customer.proto

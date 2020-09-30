@@ -1,0 +1,8 @@
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\bin\Debug\netcoreapp3.1\Domain.Entities.deps.json
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\bin\Debug\netcoreapp3.1\Domain.Entities.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\bin\Debug\netcoreapp3.1\Domain.Entities.pdb
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\obj\Debug\netcoreapp3.1\Domain.Entities.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\obj\Debug\netcoreapp3.1\Domain.Entities.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\obj\Debug\netcoreapp3.1\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\obj\Debug\netcoreapp3.1\Domain.Entities.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\Domain.Entities\obj\Debug\netcoreapp3.1\Domain.Entities.pdb

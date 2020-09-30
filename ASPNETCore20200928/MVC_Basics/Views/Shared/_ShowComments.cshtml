@@ -1,0 +1,12 @@
+﻿@model MVC_Basics.ViewModels.BlogCommentViewModel
+
+<h1>Partial View - Zeige alle Kommentare</h1>
+
+<ul>
+    @foreach (var item in Model.Comments)
+    {
+        <li>
+            Titel: @item.Message;
+        </li>
+    }
+</ul>

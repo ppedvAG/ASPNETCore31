@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "ViewBagSample";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+    var userId = ViewBag.UserId;
+    var name = ViewBag.Name;
+    var age = ViewBag.Age;
+}
+
+<h1>ViewBagSample</h1>
+
+<p>@ViewBag.UserId</p>
+
+
+
+<h1>ViewBagSample</h1>
+
+UserId : @userId
+<br />
+Name : @name
+<br />
+Age : @age
+<br />
+
