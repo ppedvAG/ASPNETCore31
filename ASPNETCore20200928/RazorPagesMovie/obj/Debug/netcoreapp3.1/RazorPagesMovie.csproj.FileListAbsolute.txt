@@ -165,8 +165,6 @@ C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netc
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\RazorPagesMovie.csproj.CoreCompileInputs.cache
-C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\RazorPagesMovie.MvcApplicationPartsAssemblyInfo.cache
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Movie\Create.cshtml.g.cs
@@ -175,3 +173,7 @@ C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netc
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Movie\Edit.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Movie\Index.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\RazorPagesMovie.csprojAssemblyReference.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\RazorPagesMovie.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore31\ASPNETCore20200928\RazorPagesMovie\obj\Debug\netcoreapp3.1\RazorPagesMovie.MvcApplicationPartsAssemblyInfo.cache

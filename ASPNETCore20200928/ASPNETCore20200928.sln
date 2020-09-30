@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPage_With_EF", "RazorP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{369B6913-F3B5-4945-A25E-1DABBB5BE01F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Basics", "MVC_Basics\MVC_Basics.csproj", "{29C67740-5C22-41D8-820F-35472D120A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC_Basics", "MVC_Basics\MVC_Basics.csproj", "{29C67740-5C22-41D8-820F-35472D120A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Movies_CRUD", "MVC_Movies_CRUD\MVC_Movies_CRUD.csproj", "{26D75318-1BAD-4937-8E92-3D63F7B9E051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{29C67740-5C22-41D8-820F-35472D120A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C67740-5C22-41D8-820F-35472D120A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C67740-5C22-41D8-820F-35472D120A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D75318-1BAD-4937-8E92-3D63F7B9E051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D75318-1BAD-4937-8E92-3D63F7B9E051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D75318-1BAD-4937-8E92-3D63F7B9E051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D75318-1BAD-4937-8E92-3D63F7B9E051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

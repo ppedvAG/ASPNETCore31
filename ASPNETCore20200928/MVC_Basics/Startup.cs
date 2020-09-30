@@ -46,26 +46,27 @@ namespace MVC_Basics
 
             app.UseAuthorization();
 
-#pragma warning disable MVC1005 // Cannot use UseMvc with Endpoint Routing.
-            app.UseMvc(configureRoutes =>
+            //#pragma warning disable MVC1005 // Cannot use UseMvc with Endpoint Routing.
+            //            app.UseMvc(configureRoutes =>
+            //            {
+            //                configureRoutes.MapRoute("blog", "blog/{*article}",
+            //                         defaults: new { controller = "Blog", action = "Article" });
+            //            });
+            //#pragma warning restore MVC1005 // Cannot use UseMvc with Endpoint Routing.
+
+
+            //Regelabfolge -> bis passende Regel Match oder die Default-Route angesprochen wird
+            app.UseEndpoints(endpoints =>
             {
-                configureRoutes.MapRoute("blog", "blog/{*article}",
-                         defaults: new { controller = "Blog", action = "Article" });
+                //endpoints.MapControllerRoute(
+                //    name: "Custom",
+                //    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}"); //{id:int} = constraint -> gibt an welcher Typ die Id ist
+                //localhost:12345/PartialViewSample/
             });
-#pragma warning restore MVC1005 // Cannot use UseMvc with Endpoint Routing.
-
-
-            ////Regelabfolge -> bis passende Regel Match oder die Default-Route angesprochen wird
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "Custom",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
-            //});
 
 
         }

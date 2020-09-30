@@ -20,6 +20,8 @@ namespace MVC_Basics.Controllers
 
         public IActionResult Index()
         {
+
+
             return View(); // Generiert eine Page mit Datenmoden (optional) + View
         }
 
